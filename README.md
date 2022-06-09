@@ -1,7 +1,7 @@
 # link_mobility_test
 This repository contains the solution for the link mobility test.
 
-The solution has one main file which is LinkMobility.java
+The solution has one main file which is <b>LinkMobility.java</b>
 In this file,e I have put in a static final string to put in <b>MSIDN_CODE</b> so in the future if we want to change the code we can change it.
 Also provided static file name which in the particular case is <b>"clients.txt"</b>.
 For this class, I call nested methodcallsl to two different classes which are <b>Utility.java</b> and <b>FileOperations.java</b>
