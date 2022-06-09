@@ -45,11 +45,12 @@ public class FileOperations {
 	 * </p>
 	 * 
 	 * @param fileName C:\\Users\\HP\\Desktop\\clients.txt or clients.txt
+	 * @param HashMap of phoneNumbers
 	 * @return {@link HashMap<String,Integer>} where phoneNumber = key and no of appearances = value
 	 */
-	public static void writeBackToFile(HashMap<String, Integer> collection) throws IOException {
+	public static void writeBackToFile(String fileName, HashMap<String, Integer> phoneNumbers) throws IOException {
 		// for sorting the hash map generated into asecending order
-		Map<String, Integer> map = new TreeMap<String, Integer>(collection);
+		Map<String, Integer> map = new TreeMap<String, Integer>(phoneNumbers);
 		File file = new File("MSIDN_clients.txt");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 
